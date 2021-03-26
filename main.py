@@ -33,7 +33,7 @@ while(1):
         with open(filename, 'a') as csvfile:
             csv_write = csv.writer(csvfile)
             csv_head = ["oil_price", "time"]
-            csv_write.(csv_head)
+            csv_write.writerow(csv_head)
     else:
         oil_price_last = oil_price
         oil_price = str(re.findall('id="last_last" dir="ltr">(.*?)</span>', html))
