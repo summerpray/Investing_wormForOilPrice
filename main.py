@@ -44,6 +44,7 @@ while(1):
             csv_write = csv.writer(csvfile)
             print(oil_price)
             csv_write.writerow(list)
-    time.sleep(60)
+    while(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())[17:19]!='00'):
+        time.sleep(0.1)
 # print(day)
 
